@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aguacate - La Cosecha Diaria</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <a href="index.html">
+      <img src="logo.jpeg" alt="Logo" width="80">
+    </a>
+    <div class="logo"><h1>La Cosecha Diaria</h1></div>
+    <input type="text" id="buscador" placeholder="Buscar frutas...">
+    <button id="carrito-btn">🛒 Carrito (<span id="carrito-count">0</span>)</button>
+  </header>
+  </header>
+
+  <div id="contenido">
+    <!-- Producto -->
+    <div class="item" data-nombre="Manzana" data-precio="30.00" data-descuento="0">
+   <a href="supcomercio.html"><img src="manzana.jpg" alt="Manzana"></a>
+     <h3>Manzana</h3>
+     <p>Precio: $30.00</p>
+     <p>Descuento:0%</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+    <div class="item" data-nombre="Platano" data-precio="40.00" data-descuento="5">
+   <a href="platano.html">
+    <img src="platano.jpg" alt="platano">
+    </a>
+    <h3>Plátano</h3>
+      <p>Precio: $40.00</p>
+      <p>Descuento: 5%</p>
+      <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+  <div class="item" data-nombre="guayaba" data-precio="35.00" data-descuento="0">
+    <a href="guayaba.html">
+    <img src="guayaba.jpg" alt="Manzana">
+    </a>
+    <h3>guayaba</h3>
+    <p>Precio: $35.00</p>
+    <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+    <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+  <div class="item" data-nombre="pera" data-precio="40.00" data-descuento="0">
+    <a href="pera.html">
+    <img src="pera.jpg" alt="Manzana">
+    </a>
+    <h3>pera</h3>
+    <p>Precio: $40.00</p>
+    <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+  <div class="item" data-nombre="sandia" data-precio="45.00" data-descuento="0">
+    <a href="sandia.html">
+    <img src="sandia.jpg" alt="Manzana">
+    </a>
+    <h3>sandia</h3>
+    <p>Precio: $45.00</p>
+    <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+    <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+  <div class="item" data-nombre="melon" data-precio="43.50" data-descuento="0">
+    <a href="melon.html">
+    <img src="melon.jpg" alt="Manzana">
+    </a>
+    <h3>melon</h3>
+    <p>Precio: $43.50</p>
+    <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+    <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+  <div class="item" data-nombre="piña" data-precio="60.50" data-descuento="5">
+    <a href="piña.html">
+    <img src="piña.jpg" alt="Manzana">
+    </a>
+    <h3>piña</h3>
+    <p>Precio: $60.50</p>
+    <p>Descuento: 5%</p>
+    <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+  <div class="item" data-nombre="narabja" data-precio="30.00" data-descuento="0">
+    <a href="naranja.html">
+    <img src="naranja.jpg " alt="Manzana">
+    </a>
+    <h3>naranja</h3>
+    <p>Precio: $30.00</p>
+    <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+    <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+ </div>
+    <div class="item" data-nombre="mandarina" data-precio="35.00" data-descuento="0">
+    <a href="mandarina.html">
+    <img src="mandarina.jpg" alt="mandarina">
+    </a>
+    <h3>mandarina</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+    <div class="item" data-nombre="limon" data-precio="35.00" data-descuento="0">
+    <a href="limon.html">
+    <img src="limon.jpg" alt="limon">
+    </a>
+    <h3>limon</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+    <div class="item" data-nombre="fresa" data-precio="35.00" data-descuento="0">
+    <a href="fresa.html">
+    <img src="fresa.jpg" alt="fresa">
+    </a>
+    <h3>fresa</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+    <div class="item" data-nombre="durazno" data-precio="35.00" data-descuento="0">
+    <a href="durazno.html">
+    <img src="durazno.jpg" alt="durazno">
+    </a>
+    <h3>durazno</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+    <div class="item" data-nombre="uva" data-precio="35.00" data-descuento="0">
+    <a href="uva.html">
+    <img src="uva.jpg" alt="uva">
+    </a>
+    <h3>uva</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+    <div class="item" data-nombre="kiwi" data-precio="35.00" data-descuento="0">
+    <a href="kiwi.html">
+    <img src="kiwi.jpg" alt="kiwi">
+    </a>
+    <h3>kiwi</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+    </div>
+    <div class="item" data-nombre="coco" data-precio="35.00" data-descuento="0">
+    <a href="coco.html">
+    <img src="coco.jpg" alt="coco">
+    </a>
+    <h3>coco</h3>
+    <div class="opciones">
+      <p>Precio: $35.00</p>
+     <p>Cantidad: <input type="number" min="1" value="1" class="cantidad-input"></p>
+      <button onclick="agregarAlCarrito(event, this)">Agregar al carrito</button>
+    </div>
+  
+
+  <script>
+    const buscador = document.getElementById("buscador");
+    const items = document.querySelectorAll(".item");
+
+    buscador.addEventListener("input", () => {
+      const texto = buscador.value.toLowerCase().trim();
+
+      items.forEach(item => {
+        const nombre = item.dataset.nombre.toLowerCase();
+        if (texto && nombre.includes(texto)) {
+          item.style.display = "block"; // se muestra
+        } else {
+          item.style.display = "none"; // se oculta
+        }
+      });
+    });
+  </script>
+<!-- copiar la parte de arriba para agregar mas productos-->
+</div>
+<!-- Modal del carrito -->
+<div id="carrito-modal">
+  <div id="carrito-contenido">
+    <span class="cerrar-modal" onclick="cerrarCarrito()">✖</span>
+    <h2>Tu carrito</h2>
+    <div id="lista-carrito"></div>
+    <div class="carrito-total">Total: $<span id="carrito-total">0.00</span></div>
+    <button onclick="pagar()">Proceder al pago</button>
+  </div>
+</div>
+</header>
+
+  <!-- ===== PRODUCTO ===== -->
+  <main class="container">
+    <div class="product-img">
+      <img src="pera.jpg" alt="platano">
+    </div>
+
+    <div class="product-details">
+      <h2>pera</h2>
+      <div class="price" id="precio-total">$40.00</div>
+
+      <form>
+        <label for="calidad">Calidad</label>
+        <select id="calidad">
+          <option value="1">Chico</option>
+          <option value="1.2">Mediano (+20%)</option>
+          <option value="1.5">Grande (+50%)</option>
+        </select>
+
+        <label for="presentacion">Presentación</label>
+        <select id="presentacion">
+          <option value="1">1 Kilo</option>
+          <option value="2">2 Kilos</option>
+          <option value="5">5 Kilos</option>
+        </select>
+
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" value="1" min="1">
+
+        <label for="especificacion">Alguna especificación</label>
+        <textarea id="especificacion" placeholder="Ejemplo: pera maduros"></textarea>
+
+        <button type="submit" class="btn" onclick="agregarProductoIndividual(event)">Agregar al carrito</button>
+      </form>
+
+      <div class="description">
+        <h3>Descripción del producto</h3>
+        <p>
+          
+        </p>
+        <p>
+          <b>pera grande:</b> 250 g aprox.<br>
+          <b>pera mediano:</b> 150 g aprox.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== MODAL CARRITO ===== -->
+  <div id="carrito-modal">
+    <div id="carrito-contenido">
+      <span class="cerrar-modal" onclick="cerrarCarrito()">✖</span>
+      <h2>Tu carrito</h2>
+      <div id="lista-carrito"></div>
+      <div class="carrito-total">Total: $<span id="carrito-total">0.00</span></div>
+      <button onclick="pagar()">Proceder al pago</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-contenedor">
+      <div class="footer-col">
+        <h2>La Cosecha Diaria</h2>
+        <p>Frutas frescas todos los días, directo del campo a tu mesa.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Síguenos</h3>
+        <div class="redes">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 La Cosecha Diaria. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    /* ==== PRECIO DINÁMICO DEL PRODUCTO ==== */
+    const precioBase = 40.00;
+    const precioTotal = document.getElementById("precio-total");
+    const calidad = document.getElementById("calidad");
+    const presentacion = document.getElementById("presentacion");
+    const cantidad = document.getElementById("cantidad");
+
+    function calcularPrecio() {
+      const factorCalidad = parseFloat(calidad.value);
+      const factorPresentacion = parseFloat(presentacion.value);
+      const cant = parseInt(cantidad.value);
+      const total = precioBase * factorCalidad * factorPresentacion * cant;
+      precioTotal.textContent = `$${total.toFixed(2)}`;
+    }
+
+    calidad.addEventListener("change", calcularPrecio);
+    presentacion.addEventListener("change", calcularPrecio);
+    cantidad.addEventListener("input", calcularPrecio);
+
+    /* ==== CARRITO ==== */
+    const carrito = [];
+    const carritoCount = document.getElementById('carrito-count');
+    const carritoModal = document.getElementById('carrito-modal');
+    const listaCarrito = document.getElementById('lista-carrito');
+    const carritoTotal = document.getElementById('carrito-total');
+
+    function agregarProductoIndividual(event) {
+      event.preventDefault();
+      const nombre = "platano";
+      const total = parseFloat(precioTotal.textContent.replace("$", ""));
+      const cant = parseInt(cantidad.value);
+
+      carrito.push({ nombre, precio: total / cant, descuento: 0, cantidad: cant });
+      actualizarCarrito();
+      alert(`Se agregó ${cant} ${nombre}(s) al carrito. Total: $${total.toFixed(2)}`);
+    }
+
+    function actualizarCarrito() {
+      carritoCount.textContent = carrito.reduce((acc, p) => acc + p.cantidad, 0);
+    }
+
+    document.getElementById('carrito-btn').addEventListener('click', () => {
+      listaCarrito.innerHTML = '';
+      let total = 0;
+
+      carrito.forEach((p, index) => {
+        const subtotal = p.precio * p.cantidad;
+        total += subtotal;
+
+        const div = document.createElement('div');
+        div.classList.add('carrito-item');
+        div.innerHTML = `
+          <strong>${p.nombre}</strong><br>
+          Cantidad: ${p.cantidad} x $${p.precio.toFixed(2)}<br>
+          Subtotal: $${subtotal.toFixed(2)}<br>
+          <button onclick="eliminarProducto(${index})">🗑️ Eliminar</button>
+        `;
+        listaCarrito.appendChild(div);
+      });
+
+      carritoTotal.textContent = total.toFixed(2);
+      carritoModal.style.display = 'flex';
+    });
+
+    function eliminarProducto(index) {
+      carrito.splice(index, 1);
+      actualizarCarrito();
+      document.getElementById('carrito-btn').click(); 
+    }
+
+    function cerrarCarrito() {
+      carritoModal.style.display = 'none';
+    }
+
+    function pagar() {
+      alert("Gracias por tu compra 🛒");
+      carrito.length = 0;
+      actualizarCarrito();
+      cerrarCarrito();
+    }
+  </script>
+  <script>
+ 
+
+  function agregarAlCarrito(event, btn) {
+    event.stopPropagation();
+    const item = btn.closest('.item');
+    const nombre = item.dataset.nombre;
+    const precio = parseFloat(item.dataset.precio);
+    const descuento = parseFloat(item.dataset.descuento);
+    const cantidad = parseInt(item.querySelector('.cantidad-input').value);
+
+    const existente = carrito.find(p => p.nombre === nombre);
+    if (existente) {
+      existente.cantidad += cantidad;
+    } else {
+      carrito.push({ nombre, precio, descuento, cantidad });
+    }
+
+    actualizarCarrito();
+  }
+
+  function actualizarCarrito() {
+    carritoCount.textContent = carrito.reduce((acc, p) => acc + p.cantidad, 0);
+  }
+
+  // Mostrar contenido del carrito
+  document.getElementById('carrito-btn').addEventListener('click', () => {
+    listaCarrito.innerHTML = '';
+    let total = 0;
+
+    carrito.forEach((p, index) => {
+      const precioDescuento = p.precio - (p.precio * p.descuento / 100);
+      const subtotal = precioDescuento * p.cantidad;
+      total += subtotal;
+
+      const div = document.createElement('div');
+      div.classList.add('carrito-item');
+      div.innerHTML = `
+        <strong>${p.nombre}</strong><br>
+        Cantidad: ${p.cantidad} x $${precioDescuento.toFixed(2)} (${p.descuento}% desc.)<br>
+        Subtotal: $${subtotal.toFixed(2)}<br>
+        <button onclick="eliminarProducto(${index})">🗑️ Eliminar</button>
+      `;
+      listaCarrito.appendChild(div);
+    });
+
+    carritoTotal.textContent = total.toFixed(2);
+
+    // Botón para vaciar el carrito
+    const vaciarBtn = document.createElement('button');
+    vaciarBtn.textContent = "Vaciar carrito 🧹";
+    vaciarBtn.style.marginTop = "10px";
+    vaciarBtn.onclick = vaciarCarrito;
+    listaCarrito.appendChild(vaciarBtn);
+
+    carritoModal.style.display = 'flex';
+  });
+
+  function eliminarProducto(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+    document.getElementById('carrito-btn').click(); // Refresca el modal
+  }
+
+  function vaciarCarrito() {
+    carrito.length = 0;
+    actualizarCarrito();
+    cerrarCarrito();
+  }
+
+  function cerrarCarrito() {
+    carritoModal.style.display = 'none';
+  }
+
+  function pagar() {
+    console.log("Enviando carrito al backend...", carrito);
+    alert("Gracias por tu compra. Esto debería conectarse al backend.");
+    carrito.length = 0;
+    actualizarCarrito();
+    cerrarCarrito();
+  }
+
+  document.getElementById('buscador').addEventListener('input', function () {
+    const texto = this.value.toLowerCase();
+    document.querySelectorAll('.item').forEach(item => {
+      const contenido = item.textContent.toLowerCase();
+      item.classList.toggle('oculto', !contenido.includes(texto));
+    });
+  });
+</script>
+</body>
+</html>

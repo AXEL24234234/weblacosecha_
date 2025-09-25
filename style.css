@@ -1,0 +1,670 @@
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.footer-col h2,
+.footer-col h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #4CAF50;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ccc;
+}
+      
+      
+      /* Ajustes generales */
+.header-content {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.myswiper-1 {
+  position: relative;
+}
+
+/* Cada slide tendrá flexbox para centrar contenido */
+/* Contenedor principal */
+.slaider {
+  display: flex;
+  flex-direction: column; /* texto arriba, imagen abajo */
+  align-items: center;    /* centra horizontal */
+  justify-content: center;/* centra vertical */
+  text-align: center;
+  padding: 30px;
+  height: 100%;
+  max-width: 1600px; /* límite de ancho en pantallas grandes */
+  margin: 0 auto;    /* centra el bloque */
+}
+
+/* Estilos del texto */
+.slider-text h4 {
+  font-size: 32px; /*  acompañar la imagen */
+  margin-bottom: 10px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-1 {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 24px; /* botones */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn-1:hover {
+  background: #cc5200;
+}
+
+/* Centrado y tamaño de la imagen */
+.slider-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.slider-img img {
+  width: 90%;          /* ocupa casi todo el ancho */
+  max-width: 1600px;   /* límite mayor que antes */
+  height: auto;        /* mantiene proporción */
+  max-height: 90vh;    /* nunca más alta que la pantalla */
+  border-radius: 20px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Ajuste para pantallas muy grandes */
+@media (min-width: 1600px) {
+  .slider-img img {
+    max-width: 1600px;
+  }
+}
+/* Ajuste para pantallas pequeñas */
+@media (min-width: 330px){ 
+  .slider-img img {
+    max-width: 660px;}  
+}
+
+      /* estilos básicos */
+    .header-content { max-width:1200px; margin:30px auto; }
+    .myswiper-1 { position: relative; }
+    .slaider { display:flex; gap:20px; align-items:center; padding:30px; }
+    .slider-img img { max-width:400px; border-radius:12px; display:block; }
+
+    /* asegurar visibilidad y clics en las flechas */
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: pointer;
+      pointer-events: auto; /* asegúrate que no esté deshabilitado */
+    }
+    .swiper-button-prev { left: 10px; }
+    .swiper-button-next { right: 10px; }
+
+    /* si los iconos por defecto no aparecen, forzamos contenido */
+    .swiper-button-next::after { content: "›"; color:#000000; font-size:20px; }
+    .swiper-button-prev::after { content: "‹"; color:#000000; font-size:20px; }
+
+    .swiper-pagination-bullet { background: #ff6600; }
+      
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:#d8dfb9;
+    }
+    /* Contenedor del encabezado */
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* Estilo del logo/título */
+    
+      .logo h1 {
+  font-size: 36px;      /* tamaño grande */
+  font-weight: bold;    /* negrita */
+  color: #20c529;       /* verde llamativo */
+  text-transform: uppercase; /* todo en mayúsculas */
+  letter-spacing: 2px;  /* espaciado entre letras */
+  margin: 0 20px;       /* separación respecto a otros elementos */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+    
+
+    /* 🔍 Estilo del buscador */
+#buscador {
+  padding: 6px 14px;
+  font-size: 14px;
+  border: 2px solid #a5d6a7; /* verde salvia */
+  border-radius: 25px;
+  width: 200px;
+  transition: 0.3s ease;
+  background: #ffffff;
+  color: #2e7d32; /* verde bosque */
+}
+
+#buscador:focus {
+  border-color: #66bb6a; /* verde hoja */
+  outline: none;
+  width: 230px;
+  background: #f1f8e9; /* verde muy claro */
+}
+
+/* 🛒 Botón del carrito */
+#carrito-btn {
+  background-color: #66bb6a; /* verde fresco */
+  color: white;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#carrito-btn:hover {
+  background-color: #388e3c; /* verde más intenso */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* 🍎 Contenedor de productos */
+#contenido {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* 🥑 Cada producto */
+.item {
+  background-color: #fffdf7; /* beige claro */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+.item img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item h3 {
+  margin: 12px 0 6px;
+  font-size: 17px;
+  text-align: center;
+  color: #2e7d32;
+  font-family: 'Georgia', serif;
+}
+
+/* Opciones (cantidad + botón) */
+.opciones {
+  display: none;
+  background-color: #f9fbe7; /* verde muy claro */
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #c5e1a5;
+}
+
+.item.activo .opciones {
+  display: block;
+}
+
+.opciones input[type="number"] {
+  width: 65px;
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid #a5d6a7;
+  border-radius: 5px;
+}
+
+.opciones button {
+  margin-top: 8px;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.opciones button:hover {
+  background-color: #388e3c;
+}
+
+/* 🌿 Modal carrito mejorado */
+#carrito-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* un poco más oscuro para foco */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Contenido del modal */
+#carrito-contenido {
+  background: #fdfaf5; /* beige cálido */
+  padding: 30px 25px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35); /* sombra más profunda */
+  border: 2px solid #a5d6a7; /* detalle verde natural */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Encabezado */
+#carrito-contenido h2 {
+  margin-top: 0;
+  color: #2e7d32; /* verde bosque */
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 8px;
+}
+
+/* Items del carrito */
+.carrito-item {
+  border-bottom: 1px solid #c5e1a5; /* verde suave */
+  padding: 12px 0;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botón de cerrar */
+.cerrar-modal {
+  float: right;
+  cursor: pointer;
+  color: #ffeb3b; /* amarillo maíz */
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.cerrar-modal:hover {
+  color: #f57f17; /* amarillo más intenso */
+}
+
+/* Total del carrito */
+.carrito-total {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #33691e; /* verde bosque oscuro */
+  font-size: 18px;
+  text-align: right;
+}
+
+/* Scroll del modal suave */
+#carrito-contenido::-webkit-scrollbar {
+  width: 8px;
+}
+
+#carrito-contenido::-webkit-scrollbar-thumb {
+  background-color: #a5d6a7;
+  border-radius: 4px;
+}
+
+#carrito-contenido::-webkit-scrollbar-track {
+  background: #f1f8e9;
+}
+
+
+.resolucion {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+    max-width: none;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  #buscador {
+    width: 95%;
+  }
+}
+
+/* Por defecto: todo oculto */
+.desktop,
+.tablet,
+.movil {
+    display: none;
+}
+
+
+/* Tablet (768px a 990px) */
+@media (min-width: 768px) and (max-width: 990px) {
+    .tablet {
+        display: block;
+    }
+}
+
+/* Escritorio (mayor a 990px) */
+@media (min-width: 991px) {
+    .desktop {
+        display: block;
+    }
+}
+
+/* Opcional: estilo para los textos */
+.resolucion h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+footer {
+  background: linear-gradient(135deg, #3b2c20, #5a3c24); /* marrón rústico */
+  color: #fff8e1; /* tono cálido tipo pergamino */
+  padding: 40px 0;
+  margin-top: 30px;
+  border-top: 5px solid #8bc34a; /* verde naturaleza */
+  font-family: 'Georgia', serif; /* tipografía más rústica */
+}
+
+.footer-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Títulos con estilo de granja */
+.footer-col h2,
+.footer-col h3 {
+  margin-top: 0;
+  color: #ffeb3b; /* amarillo maíz */
+  font-family: 'Georgia', serif;
+  border-bottom: 2px solid #8bc34a;
+  padding-bottom: 8px;
+}
+
+/* Lista sin viñetas pero con íconos */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.footer-col ul li::before {
+  content: "🌿"; /* ícono granja */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #fff8e1;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #8bc34a; /* verde naturaleza */
+}
+
+/* Redes sociales en estilo rústico */
+.redes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.redes a {
+  width: 40px;
+  height: 40px;
+  background: #8bc34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  background: #ffeb3b; /* amarillo */
+  color: #3b2c20;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #ccc;
+  border-top: 1px solid #8bc34a;
+  padding-top: 10px;
+}
+/* HEADER estilo natural elegante */
+header {
+  background: #fdfaf5; /* beige lino */
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #a5d6a7; /* verde salvia */
+  font-family: 'Georgia', serif;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Logo elegante natural */
+.logo h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #2e7d32; /* verde bosque */
+  margin: 0;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-left: 6px solid #c8e6c9; /* detalle decorativo natural */
+  padding-left: 12px;
+}
+
+/* Buscador estilo ecológico */
+#buscador {
+  padding: 8px 16px;
+  font-size: 15px;
+  border: 2px solid #a5d6a7; /* verde suave */
+  border-radius: 30px;
+  width: 220px;
+  background: #ffffff;
+  color: #2e7d32;
+  transition: 0.3s;
+}
+
+#buscador:focus {
+  border-color: #66bb6a; /* verde hoja */
+  background: #f1f8e9;   /* verde muy claro */
+  outline: none;
+  width: 250px;
+}
+
+/* Botón carrito estilo fresco */
+#carrito-btn {
+  background-color: #66bb6a; /* verde fresco */
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#carrito-btn:hover {
+  background-color: #388e3c; /* verde intenso */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.opciones {
+      display: none;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .item.activo .opciones {
+      display: block;
+    }
+
+    .opciones input[type="number"] {
+      width: 60px;
+      padding: 4px;
+      margin-left: 5px;
+    }
+
+    .opciones button {
+      margin-top: 8px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .oculto {
+      display: none;
+    }
+body {
+  font-size: 16px;
+}
+
+/* Ajustes para tablet (max-width 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Ajustes para móvil (max-width 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    padding: 5px;
+  }
+  .container {
+  display: flex;
+  flex-wrap: wrap; /* Para que los elementos bajen si no caben */
+  justify-content: center;
+}
+.item {
+  flex: 1 1 200px; /* Crece, se encoge y ancho base 200px */
+  margin: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+}
