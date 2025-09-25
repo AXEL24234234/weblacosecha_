@@ -405,20 +405,7 @@ footer {
     box-sizing: border-box;
 }
 
-@media (max-width: 480px) {
-  .item {
-    width: 100%;
-    max-width: none;
-  }
 
-  header .logo h1 {
-    font-size: 1.2rem;
-  }
-
-  #buscador {
-    width: 95%;
-  }
-}
 
 /* Por defecto: todo oculto */
 .desktop,
@@ -426,7 +413,32 @@ footer {
 .movil {
     display: none;
 }
+@media (max-width: 767px) {
+  .movil {
+    display: block;            /* Mostrar contenido móvil */
+    text-align: center;        /* Centrar texto horizontalmente */
+    padding: 15px;             /* Espaciado interno */
+  }
 
+  .movil h1, .movil p {
+    margin: 10px 0;            /* Separación entre títulos y párrafos */
+    font-size: 1.5rem;         /* Ajuste de tamaño para móviles */
+  }
+
+  /* Si tienes botones dentro de .movil */
+  .movil .btn-1 {
+    display: inline-block;
+    margin: 10px auto;         /* Centrado horizontal */
+  }
+
+  /* Si hay imágenes dentro de .movil */
+  .movil img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;           /* Centrar imagen */
+  }
+}
 
 /* Tablet (768px a 990px) */
 @media (min-width: 768px) and (max-width: 990px) {
@@ -632,39 +644,3 @@ header {
     .oculto {
       display: none;
     }
-body {
-  font-size: 16px;
-}
-
-/* Ajustes para tablet (max-width 768px) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-  .container {
-    padding: 10px;
-  }
-}
-
-/* Ajustes para móvil (max-width 480px) */
-@media (max-width: 480px) {
-  body {
-    font-size: 12px;
-  }
-  .container {
-    padding: 5px;
-  }
-  .container {
-  display: flex;
-  flex-wrap: wrap; /* Para que los elementos bajen si no caben */
-  justify-content: center;
-}
-.item {
-  flex: 1 1 200px; /* Crece, se encoge y ancho base 200px */
-  margin: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-}
